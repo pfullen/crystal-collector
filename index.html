@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="./assets/js/game.js"></script>
+
+	 <!-- css reset-->
+	<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- custom css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+	<div class="container-fluid main ">
+		<div class="row">
+
+
+			<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								Wins:
+							</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+						
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								Loses
+							</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								Score:
+							</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+						
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								Total Score:
+							</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+						
+					</div>
+				</div>
+		
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title main-header">
+						Crystals Collector
+					</h3>
+				</div>
+				<div class="panel-body main-body ">
+					<p> You will be given a random number at the beginning of the game </p>
+					<p> There are four cyrstals below.  By clicking on a crystal you will add a specific amount of points to your total score.  </p>
+					<p> You win the game by matching your total score to a random number.</p>
+					<o> The value of each crystal is hidden from you until you click it.</o>
+					<p> Each time when the game starts, the game will change the values of each crystal.</p>
+				</div>
+				<div class="panel-footer">
+					<div class="gem-body">
+						<div class= "gems" id="diamond"> <img src="assets/images/diamond.png"/>  </div>
+						<div class="gems" id="ruby">  <img src="assets/images/ruby.png"/> </div>
+						<div class="gems" id ="saphire"> <img src="assets/images/saphire.png"/> </div>
+						<div class="gems" id = "garnet"> <img src="assets/images/garnet.png"/> </div>
+					</div>
+				</div>
+			</div>
+			<div class="page-header">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			Number total: 39
+		</div>
+		<div class="col-md-3">
+			<div id="wins"> </div>
+			<div id="loses"> </div>
+		</div>
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+	
+</div>
+</body>
+
+</html>

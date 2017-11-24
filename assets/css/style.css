@@ -1,0 +1,39 @@
+.gems {
+display: inline-block;
+
+}
+
+img {
+
+height: 100px;
+width: 100px;
+padding: 10px;
+
+}
+
+
+.main {
+
+	width: 60%;
+	margin-top: 75px;
+}
+
+.main-header {
+
+	text-align: center;
+}
+
+.gem-body  {
+	width: 60%;
+	margin: 0 auto;
+
+}
+
+.main-body {
+
+	text-align: center;
+}
+
+.main-body p {
+	padding: 10px 0;
+}
