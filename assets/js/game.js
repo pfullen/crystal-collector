@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-var game {
+var game = {
 	wins: 	"",
 	loses:  "",
 	numCount: "",
@@ -10,7 +10,7 @@ var game {
 	rubyRandNum: "",
 	diamondRandNum: "",
 	saphireRandNumb: "",
-	gameRandomNumber: ""
+	gameRandomNumber: "",
 
 	startGame: function() {
 		wins = 0;
@@ -51,5 +51,7 @@ var game {
 	},
 
 };
-
+   $('.gems').on("click", function(e) {
+   		console.log(this);
+   });
 });
