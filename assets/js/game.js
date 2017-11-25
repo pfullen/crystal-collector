@@ -13,8 +13,7 @@ var game = {
 	gameRandomNumber: 0,
 
 	startGame: function() {
-		wins = 0;
-		losses = 0;
+		
 		numCount = 0;
 		userScore = 0;
 		// append the above vars to their various divs
@@ -62,6 +61,8 @@ var game = {
 	},
 
 	gameResult: function(result) {
+		
+
 		$('.main-body').hide();
         $('.result-body').show();
         $('#game-message').text(result);
@@ -102,13 +103,13 @@ var game = {
 		$('#total-score').text("Total Score: " + userScore);
 
 		if (userScore === gameRandmomNumber) {
-			   wins++;
-			$('#wins').text('Wins: ' + wins);
+			    game.wins++;
+			$('#wins').text('Wins: ' + game.wins);
 			     var result = "You win!!!"				
-				gameResult(result);			
+			   	game.gameResult(result);			
 		} else if ( userScore > gameRandmomNumber) {
-				losses++;
-				$('#losses').text('Losses: ' + losses);
+				game.losses++;
+				$('#losses').text('Losses: ' + game.losses);
 				var result = "You lose!!!"
 				game.gameResult(result);				
 			
