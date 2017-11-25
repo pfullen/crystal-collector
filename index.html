@@ -20,14 +20,14 @@
 
 <body>
 
-	<div class="container-fluid main ">
-		<div class="row">
+	<div class="container-fluid main-header ">
+		<div class="row ">
 
 
-			<div class="col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title" id="wins">
+			<div class="col-md-6 top ">
+					<div class="panel panel-default"  >
+						<div class="panel-heading" id="winTotal">
+							<h3 class="panel-title" >
 								Wins: 0
 							</h3>
 						</div>
@@ -35,8 +35,8 @@
 						
 					</div>
 					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title" id="losses">
+						<div class="panel-heading" id="lossTotal">
+							<h3 class="panel-title" >
 								Losses: 0
 							</h3>
 						</div>
@@ -44,19 +44,11 @@
 						
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Score:
-							</h3>
-						</div>
-						
-						
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title" id="totalScore">
+				<div class="col-md-6 top">
+				
+					<div class="panel panel-default ">
+						<div class="panel-heading" id="scoreTotal">
+							<h3 class="panel-title" >
 								Total Score:
 							</h3>
 						</div>
@@ -68,13 +60,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12">
+	<div class="row main">
+		<div class="col-md-12 main ">
 			
 			<div class="panel panel-default">
-				<div class="panel-heading">
+				<div class="panel-heading green" id="game-title">
 					<h3 class="panel-title main-header">
-						Crystals Collector
+						Crystal Collector
+					</h3>
+				</div>
+				<div class="panel-heading panel-green" id="random-number">
+					<h3 class="panel-title main-header" >
+						
 					</h3>
 				</div>
 				<div class="panel-body main-body ">
@@ -91,7 +88,7 @@
 					<button class="btn btn-primary result-body" id="result-button"> Click To Play Again </button>
 
 				</div>	
-				<div class="panel-footer">
+				<div class="panel-footer" id="footer-green">
 					<div class="gem-body">
 						<div class= "gems" id="diamond"> <img src="assets/images/diamond.png"/>  </div>
 						<div class="gems" id="ruby">  <img src="assets/images/ruby.png"/> </div>
@@ -99,7 +96,7 @@
 						<div class="gems" id = "garnet"> <img src="assets/images/garnet.png"/> </div>
 					</div>
 
-					<div id="random-number">   </div> 
+					
 				</div>
 			</div>
 			

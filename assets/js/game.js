@@ -2,14 +2,14 @@ $(document).ready(function(){
 
 
 var game = {
-	wins: 	0,
-	losses:  0,
-	numCount: 0,
-	userScore: 0,
-	garnetRandNum: 0,
-	rubyRandNum: 0,
-	diamondRandNum: 0,
-	saphireRandNumb: 0,
+	wins: 		 	  0,
+	losses: 		  0,
+	numCount: 		  0,
+	userScore: 		  0,
+	garnetRandNum:    0,
+	rubyRandNum: 	  0,
+	diamondRandNum:   0,
+	saphireRandNumb:  0,
 	gameRandomNumber: 0,
 
 	startGame: function() {
@@ -21,7 +21,7 @@ var game = {
 		$('#totalScore').text("Total Score: " + userScore);
 		$('#game-message').text("");
 		gameRandmomNumber = this.getRandomNumber();
-		$('#random-number').text('Match this number to win: ' + gameRandmomNumber );
+		$('#random-number').text('Total up to this number to win: ' + gameRandmomNumber );
 
 		// These are hidden
 	    saphireRandNum = this.getCrystalRandomNumber();
@@ -102,12 +102,12 @@ var game = {
 		$('#totalScore').text("Total Score: " + userScore);
 
 		if (userScore === gameRandmomNumber) {
-			game.wins++;
+			   wins++;
 			$('#wins').text('Wins: ' + wins);
 			     var result = "You win!!!"				
 				gameResult(result);			
 		} else if ( userScore > gameRandmomNumber) {
-				game.losses++;
+				losses++;
 				$('#losses').text('Losses: ' + losses);
 				var result = "You lose!!!"
 				game.gameResult(result);				
