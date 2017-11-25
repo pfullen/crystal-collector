@@ -18,7 +18,7 @@ var game = {
 		numCount = 0;
 		userScore = 0;
 		// append the above vars to their various divs
-		$('#totalScore').text("Total Score: " + userScore);
+		$('#total-score').text("Total Score: " + userScore);
 		$('#game-message').text("");
 		gameRandmomNumber = this.getRandomNumber();
 		$('#random-number').text('Total up to this number to win: ' + gameRandmomNumber );
@@ -99,7 +99,7 @@ var game = {
 				break;			
 		}
          
-		$('#totalScore').text("Total Score: " + userScore);
+		$('#total-score').text("Total Score: " + userScore);
 
 		if (userScore === gameRandmomNumber) {
 			   wins++;
