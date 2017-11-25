@@ -27,24 +27,20 @@
 			<div class="col-md-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">
-								Wins:
+							<h3 class="panel-title" id="wins">
+								Wins: 0
 							</h3>
 						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
+						
 						
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">
-								Loses
+							<h3 class="panel-title" id="losses">
+								Losses: 0
 							</h3>
 						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
+						
 						
 					</div>
 				</div>
@@ -55,20 +51,16 @@
 								Score:
 							</h3>
 						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
+						
 						
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">
+							<h3 class="panel-title" id="totalScore">
 								Total Score:
 							</h3>
 						</div>
-						<div class="panel-body">
-							Panel content
-						</div>
+						
 						
 					</div>
 				</div>
@@ -91,7 +83,14 @@
 					<p> You win the game by matching your total score to a random number.</p>
 					<o> The value of each crystal is hidden from you until you click it.</o>
 					<p> Each time when the game starts, the game will change the values of each crystal.</p>
+					
 				</div>
+				<div class="panel-body result-body"> 
+					
+					<p id= "game-message"> </p>
+					<button class="btn btn-primary result-body" id="result-button"> Click To Play Again </button>
+
+				</div>	
 				<div class="panel-footer">
 					<div class="gem-body">
 						<div class= "gems" id="diamond"> <img src="assets/images/diamond.png"/>  </div>
@@ -99,6 +98,8 @@
 						<div class="gems" id ="saphire"> <img src="assets/images/saphire.png"/> </div>
 						<div class="gems" id = "garnet"> <img src="assets/images/garnet.png"/> </div>
 					</div>
+
+					<div id="random-number">   </div> 
 				</div>
 			</div>
 			

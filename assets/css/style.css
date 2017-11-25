@@ -37,3 +37,15 @@ padding: 10px;
 .main-body p {
 	padding: 10px 0;
 }
+
+#game-message {
+	color: red;
+	font-size: 25px;
+}
+
+.result-body {
+	display: none;
+	text-align: center;
+
+}
+
