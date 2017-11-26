@@ -74,28 +74,26 @@ var game = {
         });
 
 
-	}
+	},
 
-};
-   $('.gems').on("click", function(e) {
-   		console.log(this.id);
-
-   		switch (this.id ) {
+	checkClick: function(e) {
+		console.log("This is inside the obj" + e);
+		switch (e) {
 
 			case "diamond": 
-				console.log("you just clicked " + this.id);
+				console.log("you just clicked " + e);
 				userScore += diamondRandNum;
 				break;
 			case "ruby": 
-				console.log("you just clicked ruby" + this.id);
+				console.log("you just clicked ruby" + e);
 				 userScore += rubyRandNum;
 				break;
 			case "saphire": 
-				console.log("you just clicked " + this.id);
+				console.log("you just clicked " + e);
 				userScore += saphireRandNum;
 				break;
-			case "garnet": 
-				console.log("you just clicked " + this.id);
+			case "garnet": 	
+				console.log("you just clicked " + e);
 				userScore += garnetRandNum;
 				break;			
 		}
@@ -114,6 +112,16 @@ var game = {
 				game.gameResult(result);				
 			
 		}
+	}
+
+};   // end of game obj   
+
+//  Game code starts here
+   $('.gems').on("click", function(e) {
+   		console.log(this.id);
+   		game.checkClick(this.id);
+
+   	
    });
    game.startGame();
 });
